@@ -79,15 +79,15 @@ header {
   color: #d32f2f;
 }
 
-/*responsive probeersel 1*/
+/* Responsive 2 */
 @media (max-width: 900px) {
   .nav-container {
     flex-direction: column;
-    padding-top: 20px;
+    padding: 0 20px;
   }
   
   .nav-title-box {
-    margin: 15px;
+    margin: 15px 0;
   }
 
   .nav-title {
@@ -97,8 +97,68 @@ header {
   .nav-links {
     flex-direction: column;
     gap: 15px;
-   
+    align-items: center;
   }
 }
 
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+    background-position: top center;
+    background-size: 80%;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .nav-title {
+    font-size: 22px;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+  }
+
+  .navigation {
+    padding: 20px 0;
+    border-bottom-left-radius: 20% 15vw;
+    border-bottom-right-radius: 20% 15vw;
+  }
+}
+
+/*footer*/
+.footer-pizzeria {
+  background-color: #2b1e0f; 
+  color: #f3d9b1; 
+  padding: 40px 20px 20px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-blok h3 {
+  border-bottom: 2px solid #d35400; 
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #f3d9b1;
+}
+
+.footer-copyright {
+  border-top: 1px solid #613d11;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #b78c59;
+}
 
